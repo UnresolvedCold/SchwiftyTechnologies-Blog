@@ -1,0 +1,18 @@
+<div class="form-group">
+  <label for="title">Title*</label>
+  <input required type="text" value="<%= article.title %>" name="title" id="title" autocomplete="off" class="form-control" />
+</div>
+
+<div class="form-group">
+  <label for="description">Description</label>
+  <textarea name="description" id="description" class="form-control" rows="2" autocomplete="off"><%= article.description %></textarea>
+</div>
+
+<div class="form-group">
+  <label for="markdown">Content*</label>
+  <textarea required name="markdown" id="markdown" class="form-control" rows="3" autocomplete="off"><%= article.markdown %></textarea>
+</div>
+
+<a href="/" class="btn btn-secondary">Cancel</a>
+
+<button type="submit" class="btn btn-primary">Save</button>
