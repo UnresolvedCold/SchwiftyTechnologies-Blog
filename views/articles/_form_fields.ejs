@@ -8,9 +8,13 @@
   <textarea name="description" id="description" class="form-control" rows="2" autocomplete="off"><%= article.description %></textarea>
 </div>
 
-<div class="form-group">
+<div class="form-group" height='0' visibility="0">
   <label for="markdown">Content*</label>
-  <textarea required name="markdown" id="markdown" class="form-control" rows="3" autocomplete="off"><%= article.markdown %></textarea>
+  <textarea style="display: none;" required name="markdown" id="markdown" class="form-control" rows="0" autocomplete="off"><%= article.markdown %></textarea>
+</div>
+
+<div style = "height: 500px">
+<%- include('./../test/index') %>
 </div>
 
 <a href="/" class="btn btn-secondary">Cancel</a>
